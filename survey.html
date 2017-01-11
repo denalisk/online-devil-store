@@ -3,12 +3,37 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Shopping Site</title>
   </head>
   <body>
-    //Survey Contents: Name, age, 
-
+    <!--Survey Contents: Name, age, birthday, favorite category, favorite color-->
+    <div class="container">
+      <form id="info">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input id="age" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="birthday">Date of Birth</label>
+          <input id="birthday" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="category">
+            <option>Choose your primary idea</option>
+            <option>Love</option>
+            <option>Success</option>
+            <option>Time</option>
+            <option>Comfort</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
