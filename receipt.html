@@ -14,50 +14,58 @@
       <a href="receipt.html" class="btn btn-danger">Receipt</a>
       <a href="survey.html" class="btn btn-primary">Survey</a>
     </div>
-    <form id="order-info">
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input id="name" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="street">Street Address</label>
-        <input id="street" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="city">City</label>
-        <input id="city" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="state">State</label>
-        <input id="state" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="zipcode">Zipcode</label>
-        <input id="zipcode" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <select class="form-control" id="product">
-          <option>Choose your product...</option>
-          <option>Love</option>
-          <option>Success</option>
-          <option>Time</option>
-          <option>Comfort</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-success">Submit</button>
-    </form>
-    <div class="print-receipt">
-      <ul>
-        <li><span class="name"></span></li>
-        <li><span class="street"></span></li>
-        <li><span class="city"></span>, <span class="state"></span> <span class="zipcode"></span></li>
-      </ul>
-      <div>
-        <p>
-          You have ordered <span class="product"></span> at the cost of <span class="cost"></span>.
-        </p>
+    <div class="col-md-6">
+      <form id="order-info">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="street">Street Address</label>
+          <input id="street" class="form-control" type="text">
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="col-md-2 form-group">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="col-md-4 form-group">
+            <label for="zipcode">Zipcode</label>
+            <input id="zipcode" class="form-control" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="product">
+            <option>Choose your product...</option>
+            <option>Love</option>
+            <option>Success</option>
+            <option>Time</option>
+            <option>Comfort</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <div class="print-receipt">
+        <ul>
+          <li><span class="name"></span></li>
+          <li><span class="street"></span></li>
+          <li><span class="city"></span>, <span class="state"></span> <span class="zipcode"></span></li>
+        </ul>
+        <div>
+          <p>
+            You have ordered <span class="product"></span> at the cost of <span class="cost"></span>.
+          </p>
+        </div>
       </div>
     </div>
+    <div class="col-md-6">
+
+    </div>
+
   </div>
 
 

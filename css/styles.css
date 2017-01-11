@@ -4,3 +4,43 @@ li {
 img {
   width: 100%;
 }
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.print-receipt {
+  display: none;
+}
+
+.survey-over {
+  display: none;
+}
+
+.main-contents {
+  float: none;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background: #f2dadc;
+}
+
+.nav-buttons {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.product {
+  border-top: 2px solid black;
+  border-radius: 4%;
+  margin-bottom: 50px;
+  padding-top: 25px;
+}
+
+.description {
+  padding-top: 80px;
+  background: radial-gradient(#f2dadc, #f2dadc, white, white);
+  padding-bottom: 50px;
+}

@@ -14,22 +14,47 @@
         <a href="receipt.html" class="btn btn-danger">Receipt</a>
         <a href="survey.html" class="btn btn-primary">Survey</a>
       </div>
-      <form id="info">
-
+      <form id="info" class="survey-active">
+        <div class="form-group">
+          <h5>Gender</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="no-box" unchecked>
+              Don't put me in a box!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="box" unchecked>
+              I want to be in a box!
+            </label>
+          </div>
+        </div>
         <div class="form-group">
           <label for="birthday">Date of Birth</label>
           <input id="birthday" class="form-control" type="date">
         </div>
-
         <div class="color">
           <label for="color">Choose a color</label>
           <input id="color" class="form-control" type="color">
         </div>
+        <h5>Favorite Dessert</h5>
+        <select class="form-control" id="desserts">
+          <option>Pies</option>
+          <option>Ice Cream</option>
+          <option>Cookies</option>
+          <option>Brownies</option>
+          <option>Everything</option>
+        </select>
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
       <div class="results">
         <!-- This is where the results of the survey will post -->
       </div>
+    </div>
+    <div class="container survey-over">
+      <h1 class="jumbotron">Thank you for survey response!</h1>
+
     </div>
   </body>
 </html>
