@@ -8,32 +8,23 @@
     <title>Shopping Site</title>
   </head>
   <body>
-    <!--Survey Contents: Name, age, birthday, favorite category, favorite color-->
     <div class="container">
       <form id="info">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input id="name" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="age">Age</label>
-          <input id="age" class="form-control" type="text">
-        </div>
+
         <div class="form-group">
           <label for="birthday">Date of Birth</label>
           <input id="birthday" class="form-control" type="date">
         </div>
-        <div class="form-group">
-          <select class="form-control" id="category">
-            <option>Choose your primary idea</option>
-            <option>Love</option>
-            <option>Success</option>
-            <option>Time</option>
-            <option>Comfort</option>
-          </select>
+
+        <div class="color">
+          <label for="color">Choose a color</label>
+          <input id="color" class="form-control" type="color">
         </div>
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
+      <div class="results">
+        <!-- This is where the results of the survey will post -->
+      </div>
     </div>
   </body>
 </html>
