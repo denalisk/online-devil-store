@@ -11,6 +11,14 @@ $(document).ready(function() {
     $(".survey-active").hide();
   });
 
+  $(".product").click(function() {
+    var chosenImg = $(this).find("img");
+    $(".image-box").append(chosenImg);
+    $(".home-page").hide();
+    $(".receipt-page").show();
+
+  });
+
   $("#order-info").submit(function(event) {
     (event).preventDefault();
     var nameInput = $("#name").val();

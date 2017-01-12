@@ -14,6 +14,10 @@ body {
   display: none;
 }
 
+.receipt-page {
+  display: none;
+}
+
 .survey-over {
   display: none;
 }
@@ -33,7 +37,6 @@ body {
 }
 
 .product {
-  border-top: 2px solid black;
   border-radius: 4%;
   margin-bottom: 50px;
   padding-top: 25px;

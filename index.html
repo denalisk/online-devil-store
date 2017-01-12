@@ -14,10 +14,9 @@
     //a jacket that always feels warm - cost because you always feel cold
     //love ring - cost: lose the love of someone else you love in your life
     success potion - cost: resentment from everyone-->
-    <div class="container">
+    <div class="container home-page">
       <div class="row nav-buttons">
         <a href ="index.html" class="btn btn-success">Home</a>
-        <a href="receipt.html" class="btn btn-danger">Receipt</a>
         <a href="survey.html" class="btn btn-primary">Survey</a>
       </div>
       <div class="row title jumbotron bg-danger">
@@ -28,7 +27,6 @@
 
       </div>
       <div class="col-md-8 main-contents">
-        <a href="receipt.html">
         <div class="row love product">
           <div class="col-md-6">
             <img src="img/ring.jpg" alt="A ring with a blue saphire diamond">
@@ -39,8 +37,6 @@
             </p>
           </div>
         </div>
-        </a>
-        <a href="receipt.html">
         <div class="row success product">
           <div class="col-md-6">
             <img src="img/potion.jpg" alt="A skulled shaped glass bottle with vodka">
@@ -52,8 +48,6 @@
 
           </div>
         </div>
-        </a>
-        <a href="receipt.html">
         <div class="row time product">
           <div class="col-md-6">
             <img src="img/watch.jpeg" alt="Two gloved hands holding a rolex watch">
@@ -64,8 +58,6 @@
             </p>
           </div>
         </div>
-        </a>
-        <a href="receipt.html">
         <div class="row comfort product">
           <div class="col-md-6">
             <img src="img/jacket.jpg" alt="A brown leather jacket">
@@ -76,10 +68,69 @@
             </p>
           </div>
         </div>
-        </a>
       </div>
-      <div class="row">
+      <div class="row image-box">
 
+      </div>
+    </div>
+
+    <div class="container receipt-page">
+      <div class="row">
+        <a href ="index.html" class="btn btn-success">Home</a>
+        <a href="survey.html" class="btn btn-primary">Survey</a>
+      </div>
+      <div class="col-md-6">
+        <form id="order-info">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="street">Street Address</label>
+            <input id="street" class="form-control" type="text">
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="city">City</label>
+              <input id="city" class="form-control" type="text">
+            </div>
+            <div class="col-md-2 form-group">
+              <label for="state">State</label>
+              <input id="state" class="form-control" type="text">
+            </div>
+            <div class="col-md-4 form-group">
+              <label for="zipcode">Zipcode</label>
+              <input id="zipcode" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="product">
+              <option>Choose your product...</option>
+              <option>Love</option>
+              <option>Success</option>
+              <option>Time</option>
+              <option>Comfort</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <div class="print-receipt">
+          <ul>
+            <li><span class="name"></span></li>
+            <li><span class="street"></span></li>
+            <li><span class="city"></span>, <span class="state"></span> <span class="zipcode"></span></li>
+          </ul>
+          <div>
+            <p>
+              You have ordered <span class="product"></span> at the cost of <span class="cost"></span>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image-box">
+
+        </div>
       </div>
     </div>
   </body>
